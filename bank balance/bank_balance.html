@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No_Bank</title>
+    <link rel="stylesheet" href="bank_b.css" type="text/css">
+</head>
+<body>
+<div class="main-div">
+    <div class="container">
+        <img src="bank-account.png" style="height:10vh">
+        <div class="deposit">
+            <h1>Deposit:</h1>
+            <input type="text" placeholder="Enter amount" id="deposit_in">
+            <button onclick="deposit()">Deposit</button>
+        </div>
+        
+        <div class="withdraw">
+            <h1>Withdraw:</h1>
+            <input type="text" placeholder="Enter amount" id="withdraw_in">
+            <button id="withdraw_btn" onclick="withdraw()">Withdraw</button>
+        </div>
+
+        <div class="balance_check">
+            <h1>Your Bank Balance:</h1>
+            <h3 id="balance_display"></h3>
+            <button id="checkbal_btn" onclick="checkBalance()">Check Balance</button>
+        </div>
+    </div>
+</div>
+    
+    
+    <script src="bank.js"></script>
+
+</body>
+</html>
